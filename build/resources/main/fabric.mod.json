@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "lumenhollow",
+  "version": "1.0.0",
+  "name": "Lumen Hollow",
+  "description": "A glowing crystal mod with moonfruit, a portal block, and a new dimension.",
+  "authors": ["OpenAI"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.lumenhollow.LumenHollowMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

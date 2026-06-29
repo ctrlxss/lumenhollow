@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "lumenhollow:lumen_crystal_ore"
+    }
+  ],
+  "result": {
+    "item": "lumenhollow:lumen_crystal",
+    "count": 2
+  }
+}

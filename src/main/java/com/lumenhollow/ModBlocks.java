@@ -24,6 +24,21 @@ public final class ModBlocks {
                     .noOcclusion()
                     .lightLevel(state -> 10)));
 
+    public static final Block LUMEN_CRYSTAL_ORE = registerBlock("lumen_crystal_ore",
+            new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_CYAN)
+                    .strength(4.5f, 8.0f)
+                    .sound(SoundType.STONE)
+                    .lightLevel(state -> 4)));
+
+    public static final Block LUMEN_LANTERN = registerBlock("lumen_lantern",
+            new LumenLanternBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_YELLOW)
+                    .strength(1.5f)
+                    .sound(SoundType.GLASS)
+                    .noOcclusion()
+                    .lightLevel(state -> 15)));
+
     private static Block registerBlock(String name, Block block) {
         return Registry.register(BuiltInRegistries.BLOCK, ResourceLocation.fromNamespaceAndPath(LumenHollowMod.MOD_ID, name), block);
     }

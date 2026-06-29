@@ -3,8 +3,11 @@ package com.lumenhollow;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -28,7 +31,9 @@ public class LumenPortalBlock extends Block {
         if (!level.isClientSide && player instanceof ServerPlayer serverPlayer) {
             ServerLevel targetWorld = serverPlayer.server.getLevel(ModDimensions.LUMEN_HOLLOW);
             if (targetWorld != null) {
-                serverPlayer.teleportTo(targetWorld, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, player.getYRot(), player.getXRot());
+                serverPlayer.teleportTo(targetWorld, pos.getX() + 0.5, targetWorld.getMinBuildHeight() + 8, pos.getZ() + 0.5, player.getYRot(), player.getXRot());
+                serverPlayer.playSound(SoundEvents.END_PORTAL_FRAME_FILL, 1.0f, 1.2f);
+                serverPlayer.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 300, 0, false, false));
             }
         }
         return InteractionResult.sidedSuccess(level.isClientSide);

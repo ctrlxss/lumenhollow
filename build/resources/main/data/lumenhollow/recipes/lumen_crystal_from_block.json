@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "lumenhollow:lumen_crystal_block" }
+  ],
+  "result": {
+    "id": "lumenhollow:lumen_crystal",
+    "count": 9
+  }
+}

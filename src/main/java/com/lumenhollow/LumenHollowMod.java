@@ -13,6 +13,6 @@ public class LumenHollowMod implements ModInitializer {
         ModItems.register();
         ModBlocks.register();
         ModDimensions.register();
-        LOGGER.info("Lumen Hollow initialized");
+        LOGGER.info("Lumen Hollow initialized with new crystal, portal, and lantern content");
     }
 }
