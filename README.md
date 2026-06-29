@@ -1,4 +1,11 @@
-# Example Mod
+# Lumen Hollow
+
+A Fabric mod for Minecraft 1.21.1 with glowing crystal content, a moonfruit item, a portal block, and a custom dimension.
+
+## Download
+
+The built mod jar is available at:
+- [build/libs/lumenhollow-1.0.0.jar](build/libs/lumenhollow-1.0.0.jar)
 
 ## Setup
 
