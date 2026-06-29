@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["###", "###", "###"],
+  "key": {
+    "#": { "item": "lumenhollow:lumen_crystal" }
+  },
+  "result": {
+    "id": "lumenhollow:lumen_crystal_block",
+    "count": 1
+  }
+}
