@@ -10,7 +10,16 @@
     "foliage_color": 16776960,
     "grass_color": 16776960
   },
-  "spawners": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
   "spawn_costs": {},
   "carvers": [],
   "features": []
